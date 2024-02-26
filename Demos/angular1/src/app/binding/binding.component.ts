@@ -13,6 +13,33 @@ export class BindingComponent {
   colspan:number=2;
   rowspan:number=2;
   pageHeader:string="Prop Shop";
+  boldclass:string='';
+  italicclass:string='';
+  colors:string='';
+  ApplyBoldClass:boolean=true;
+  Applyitalicclass:boolean=true;
+  Applycolorclass:boolean=false;
+  AddClasses()
+  {
+    let classes={
+   boldclass:this.ApplyBoldClass,
+   italicclass:this.Applyitalicclass,
+   colors:this.Applycolorclass
+        };
+    return classes;
+  }
+
+  AddStyle()
+  {
+    let styles={
+      'font-style':'italic',
+      'color':'green',
+      'background-color':'pink',
+      'font-name':'caliber',
+      'font-size.px':12
+    };
+    return styles;
+  }
 
 
 }
