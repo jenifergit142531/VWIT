@@ -1,0 +1,165 @@
+
+
+Agenda :
+
+- Introduction to angular
+- Environment setup
+- Basic commands (build,run,serve,version)
+- Understand the folder structure
+- Create a new angular application
+- Components
+- template vs templateurl
+- style vs styleurl
+- Modules
+- Data Binding 
+
+Angular :
+
+- front end framework
+- to develop web and mobile applications
+- open source
+
+
+Environment :
+
+- Install node
+https://nodejs.org/en
+
+node -v
+v20.10.0
+
+- Install npm 
+
+npm install -g npm
+
+npm update
+
+$ npm -version
+9.5.1
+
+- angular cli
+
+npm install -g @angular/cli
+
+npm install -g @angular/cli@latest
+
+ng version
+
+Angular CLI: 17.1.1       
+Node: 20.10.0
+Package Manager: npm 9.5.1
+
+
+Key Features :
+
+- Component based  : Modular,Smaller reusable and encapsulated component
+
+@component 
+public class classname
+{
+
+}
+- has its own simpler,has its own logic,HTML template,css styling
+
+- Two way data binding 
+
+binding data from source(model) to view and view to source(model)
+
+- Dependency Injection 
+
+services can be injected into the existing component / entire application
+
+
+- Routing
+
+navigating across multiple location in the application
+
+route[] :{
+    {home},
+    {contact}
+    {property}
+}
+
+- Forms 
+
+encapsulates multiple form controls.
+
+- Perform form validation and form data binding
+
+<form>
+<label>
+<input>
+<select>
+</form>
+
+Two types of forms :
+
+1.Template driven - [(ngModel)] - Do the validation on forms(HTML Template)
+2.Reactive form - ngForm , formgroup,formcontrol - do the server side validation(class)
+
+
+- HTTP Client
+
+- built in class that will allows server side request.
+
+- Directives :
+
+- Extend the functionality of HTML & class
+- 3 types
+
+1.Structural directives - ngIf,ngFor,ngSwitch
+2.Attribute directives - ngClass,ngStyle
+3.Component directive - @Component 
+
+
+- Testing support : built in unit test and end-end testing tool like Jasmine and Karma 
+
+Why Choose angular compared to react ?
+
+- Angular uses two way data binding - real DOM
+- Whereas react uses one way data binding - virtual DOM
+
+Understanding the folder structure in Angular :
+
+.vscode -> launch -> url
+src -> app -> app.comp.html,css,ts,router,modules
+angular.json -> outputpath(that can be referenced by other applications)
+package.json -> basic cmd info along with package details
+tsconfig -> typescript configurations
+
+Components :
+
+- Main building block of your angular application
+- It contains class- data logic,properties,methods,di,consructor + html + css + test
+- @component
+
+ng generate component <componentname>
+
+ng g c <componentname>
+
+@Input & @Output => pass the data between parent and child comonents
+
+Data Binding : pass data 
+
+1.One way data binding 
+
+model ---> view
+
+2.two way data binding
+
+model ---> view && view ---> model
+
+-include forms module package
+
+[(ngModel)]
+
+
+* Property Binding
+* Attribute Binding
+* Class Binding
+* Style Binding
+* Event Binding 
+
+
+
+
