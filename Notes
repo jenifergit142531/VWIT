@@ -162,4 +162,12 @@ model ---> view && view ---> model
 
 
 
+Property Binding : Allows us to bind the value to the HTML Element
+
+[binding-target]="binding- source"
+
+Attribute Binding : Binding to the attributes of the html elemnt.
+
+
+
 

@@ -1,0 +1,32 @@
+<!-- Attribute Binding-->
+
+<div>
+    <table>
+        <thead>
+            <tr [attr.colspan]='colspan'>
+                <th>{{pageHeader}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td [attr.rowspan]='rowspan'>Property Name</td>
+                <td>{{propertyName}}</td>
+            </tr>
+            <tr>
+                <td>Property Price</td>
+                <td>{{price}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+<!-- Property Binding-->
+<div>
+    <h1>Property Details</h1>
+    Property Name : <span [innerText]="propertyName"></span>
+    Price:<span [innerText]="price"></span>
+    <img [src]="imagePath">
+   
+</div>
