@@ -19,6 +19,8 @@ export class BindingComponent {
   ApplyBoldClass:boolean=true;
   Applyitalicclass:boolean=true;
   Applycolorclass:boolean=false;
+
+  showpropdetails:boolean=true;
   AddClasses()
   {
     let classes={
@@ -41,5 +43,13 @@ export class BindingComponent {
     return styles;
   }
 
+  onclick():void
+  {
+console.log("button is clicked");
+  }
+
+  toggle():void{
+     this.showpropdetails=!this.showpropdetails;
+  }
 
 }

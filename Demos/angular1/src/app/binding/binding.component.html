@@ -1,3 +1,30 @@
+<!--Event Binding-->
+
+<button (click)="onclick()">Click</button>
+
+
+<div>
+    <table>
+        <thead>
+            <tr [attr.colspan]='colspan'>
+                <th>{{pageHeader}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngIf="showpropdetails">
+                <td  >Property Name</td>
+                <td>{{propertyName}}</td>
+            </tr>
+            <tr *ngIf="showpropdetails">
+                <td >Property Price</td>
+                <td>{{price}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<button (click)="toggle()">{{showpropdetails ? 'Hide':'show'}}</button>
+
 <!-- Style Binding
 
 
