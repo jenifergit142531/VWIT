@@ -1,5 +1,5 @@
 <p>Parent Component - Customer List</p>
-
+<div>
 <table>
     <thead>
         <tr>
@@ -14,7 +14,7 @@
          <tr>
             <td>{{i.cusno}}</td>
             <td>{{i.name}}</td>
-            <td>{{i.cusno}}</td>
+            <td>{{i.city}}</td>
             <td>
                 <button (click)="showDetails(i)">Edit Customer</button>
             </td>
@@ -23,6 +23,7 @@
     </tbody>
 </table>
 
+</div>
+
 <h3>Child Component Customer Details</h3>
-<app-childcomponentdetails [customer]="selectedCustomer"
-(customerChange)="update($event)"]></app-childcomponentdetails>
+<app-childcomponentdetails [customer]="selectedCustomer" (customerChange)="update($event)"></app-childcomponentdetails>
