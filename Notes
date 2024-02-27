@@ -1,0 +1,38 @@
+
+
+Agenda :
+
+- Directives
+
+1.Structural directives
+2.Attribute directives
+3.Component directives
+
+- Pipes
+
+
+1.Built in pipes
+2.Custom pipes
+
+- Routing
+
+1.Route attribute
+2.dynamic routing
+
+- Input and Output Properties
+
+Directives :
+
+used to change the behaviour or appearance or layout of the DOM elements.
+
+1.Structural directives
+2.Attribute directives
+3.Component directives
+
+1.Structural directive :
+
+how components can appear or elements rendered in a template 
+
+1.NgFor (*ngFor)
+2.NgIf (*ngIf)
+3.NgSwitch (*ngSwitch)

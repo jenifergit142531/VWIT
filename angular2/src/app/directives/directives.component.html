@@ -1,0 +1,34 @@
+<p>Prop Shop</p>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Property Id</th>
+                <th>Property Name</th>
+                <th>Property Price</th>
+                <th>Availability</th>
+                <th>Last Updated Date</th>
+                <th>Index</th>
+                <th>FirstCheck</th>
+                <th>LastCheck</th>
+                <th>EvenCheck</th>
+                <th>OddCheck</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let prop of PropShop; let i =index; let first=first; let last=last; let even=even;let odd=odd;'>
+                <td>{{prop.pid}}</td>
+                <td>{{prop.pname}}</td>
+                <td>{{prop.price}}</td>
+                <td>{{prop.availability}}</td>
+                <td>{{prop.Updateddate}}</td>
+                <td>{{i}}</td>
+                <td>{{first}}</td>
+                <td>{{last}}</td>
+                <td>{{even}}</td>
+                <td>{{odd}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
