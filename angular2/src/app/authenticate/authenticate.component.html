@@ -1,0 +1,39 @@
+<p>Authentication simulator</p>
+<div>
+@if(isAuthenticated)
+{
+    @if(isAdmin)
+    {
+        <p> Welcome, Admin !!!</p>
+    }
+  
+}
+
+@else {
+    <p> please log in to access this content</p>
+}
+</div>
+<div>
+    @if(!isAdmin && userAge>=18)
+    {
+        <p> Welcome, Adult User!!!</p> 
+    }
+</div>
+
+<div>
+    @if(!isAdmin && userAge<18)
+    {
+        <p> Welcome, Minor User!!!</p> 
+    }
+</div>
+<div>
+    @if(isSubscribed)
+    {
+        <p> Your subscription is valid</p> 
+    }
+    @else {
+        your subscription is not active
+    }
+</div>
+
+

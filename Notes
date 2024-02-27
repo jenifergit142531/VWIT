@@ -36,3 +36,8 @@ how components can appear or elements rendered in a template
 1.NgFor (*ngFor)
 2.NgIf (*ngIf)
 3.NgSwitch (*ngSwitch)
+
+
+migrate older syntax to angular 17 syntax :
+
+ng g @angular/core:control-flow-migration

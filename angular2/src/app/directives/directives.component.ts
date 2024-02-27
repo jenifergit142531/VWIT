@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class DirectivesComponent {
 
+  
+
   PropShop:any[]=[
     {pid:'p100',pname:'avisa',price:25000,availability:'yes',Updateddate:'2/26/2024'},
     {pid:'p200',pname:'ivory',price:15000,availability:'no',Updateddate:'2/25/2024'},
@@ -29,4 +31,12 @@ export class DirectivesComponent {
 {
   return PropShop.index;
 }
+
+price!:number;
+
+checkPropPrice():boolean{
+  return this.price>5000;
+}
+
+
 }

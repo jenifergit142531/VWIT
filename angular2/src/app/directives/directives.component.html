@@ -1,4 +1,43 @@
-<p>Prop Shop</p>
+<div>
+<h3>Property price validation</h3> 
+
+<label for="price">Price</label>
+<input id="price" type="number" [(ngModel)]="price">
+</div>
+
+<!--<div *ngIf="checkPropPrice();then thenblock else elseblock"></div>
+
+ <ng-template #thenblock>
+<div>
+    <h3>then block executing</h3>
+</div>
+ </ng-template>
+
+ <ng-template #elseblock>
+    <div>
+        <h3>else block executing</h3>
+    </div>
+ </ng-template>
+-->
+
+@if(checkPropPrice())
+{
+    <p>then block executing</p>
+}
+@else { 
+    <p>else block</p>
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!-- <p>Prop Shop</p>
 <div>
     <table>
         <thead>
@@ -8,11 +47,11 @@
                 <th>Property Price</th>
                 <th>Availability</th>
                 <th>Last Updated Date</th>
-            <!--  <th>Index</th>
+            <th>Index</th>
                 <th>FirstCheck</th>
                 <th>LastCheck</th>
                 <th>EvenCheck</th>
-                <th>OddCheck</th>-->  
+                <th>OddCheck</th>
             </tr>
         </thead>
         <tbody>
@@ -30,7 +69,7 @@
 
             </tr>
            
-           <!--   @for(prop of PropShop; track prop.Id){
+              @for(prop of PropShop; track prop.Id){
                   <tr><td>{{prop.pid}}</td> 
                   <td>{{prop.pname}}</td>
                    <td>{{prop.price}}</td>
@@ -41,7 +80,7 @@
                     </tr>
                      
                 }
-           -->  
+          
         </tbody>
     </table>
 </div>
@@ -49,3 +88,4 @@
 <div>
     <button (click)="refresh()">Refresh Properties</button>
 </div>
+ -->  
