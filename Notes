@@ -10,7 +10,6 @@ Agenda :
 
 - Pipes
 
-
 1.Built in pipes
 2.Custom pipes
 
@@ -41,3 +40,13 @@ how components can appear or elements rendered in a template
 migrate older syntax to angular 17 syntax :
 
 ng g @angular/core:control-flow-migration
+
+Pipes :  display the output in desired format 
+
+Built in pipes :
+
+- lowercase
+- uppercase
+- currency
+- date
+- percent 

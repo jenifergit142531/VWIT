@@ -1,0 +1,39 @@
+<p>Built in pipes</p>
+<div>
+
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Property Id</th>
+                <th>Property Name</th>
+                <th>Owner Name</th>
+                <th>Property Type</th>
+                <th>Property Price</th>
+                <th>Availability</th>
+                <th>Last Updated Date</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+               
+                    @for(prop of PropShop; track prop.Id){
+                        <tr><td>{{prop.pid}}</td> 
+                        <td>{{prop.pname | title:prop.ptype}}</td>
+                        <td>{{prop.ownername| uppercase}}</td>
+                        <td>{{prop.ptype}}</td>
+                         <td>{{prop.price | currency:'USD':true}}</td>
+                           <td>{{prop.availability}}</td>
+                           <td>{{prop.Updateddate | date:'YYYY:MM:dd'}}</td>
+                          
+                           
+                          </tr>
+                        }
+                    </tbody>
+                    </table>
+
+</div>
+               
+
+
