@@ -1,0 +1,18 @@
+1.Input Validation:
+
+Add input validation to the "Change Name" input field in the UserComponent.
+Display an error message if the input field is empty or contains invalid characters.
+
+
+2.Custom Pipes:
+
+Create a custom pipe called truncate that truncates the length of the user's email address to a specified number of characters.
+Use the truncate pipe to display a truncated version of the user's email address in the UserComponent template.
+
+
+3.Dynamic Component Creation:
+
+Create a parent component called AppComponent.
+Use ngFor directive to iterate over an array of user data objects.
+Dynamically create instances of the UserComponent for each user data object in the array.
+Display the dynamically created UserComponent instances in the AppComponent template.
