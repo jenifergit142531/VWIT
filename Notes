@@ -18,7 +18,7 @@ Agenda :
 1.Route attribute
 2.dynamic routing
 
-- Input and Output Properties
+- Input and Output decorators
 
 Directives :
 
@@ -54,3 +54,27 @@ Built in pipes :
 Routing :
 
 navigate across multiple components
+
+@Input and @Output :
+
+- decorators
+- establishing communication between components.
+- They facilitate data exchange between parent and child component
+
+@Input :
+
+- pass data from parent -> child component
+- it will allow parent component to bind the data to the property of the child component
+- the child component will receive data from parent component
+
+@Output :
+
+- emit the custom event from child --> parent component
+- it will allow child component to trigger the event and the parent component will listen to the event and then responds to it..
+
+cli to create class :
+
+ng g class customer
+
+
+

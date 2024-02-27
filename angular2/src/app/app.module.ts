@@ -12,6 +12,9 @@ import { TitlePipe } from './title.pipe';
 import { ErrorComponent } from './error/error.component';
 import { DynamicComponent } from './dynamic/dynamic.component';
 
+import { ParentcomponentListComponent } from './parentcomponent-list/parentcomponent-list.component';
+import { ChildcomponentdetailsComponent } from './childcomponentdetails/childcomponentdetails.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +24,10 @@ import { DynamicComponent } from './dynamic/dynamic.component';
     PipesComponent,
     TitlePipe,
     ErrorComponent,
-    DynamicComponent
+    DynamicComponent,
+    
+    ParentcomponentListComponent,
+    ChildcomponentdetailsComponent
   ],
   imports: [
     BrowserModule,

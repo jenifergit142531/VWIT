@@ -1,0 +1,28 @@
+<p>Parent Component - Customer List</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Customer Number</th>
+            <th>Customer Name</th>
+            <th>City</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(i of customers;track i.cusno)
+        {
+         <tr>
+            <td>{{i.cusno}}</td>
+            <td>{{i.name}}</td>
+            <td>{{i.cusno}}</td>
+            <td>
+                <button (click)="showDetails(i)">Edit Customer</button>
+            </td>
+         </tr>
+        }
+    </tbody>
+</table>
+
+<h3>Child Component Customer Details</h3>
+<app-childcomponentdetails [customer]="selectedCustomer"
+(customerChange)="update($event)"]></app-childcomponentdetails>
