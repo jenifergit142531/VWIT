@@ -11,8 +11,6 @@ isAdmin:boolean=false;
 isSubscribed:boolean=false;
 userAge:number=25;
 
-
-
   constructor()
   {
     const isLoggedIn=Math.random()<0.5;

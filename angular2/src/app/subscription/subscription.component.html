@@ -1,0 +1,21 @@
+<p>Subscription simulator using switch case</p>
+<div>
+    @switch(subscriptionPlan){
+        @case(SubscriptionPlan.Basic){
+            <p> Welcome to the basic plan !!! You have access to limited features. </p>
+        }
+        @case(SubscriptionPlan.Standard){
+            <p> Welcome to the Standard plan !!! You have access to Standard features. </p>
+        }
+        @case(SubscriptionPlan.Premium){
+            <p> Welcome to the Premium plan !!! You have access to Premium features. </p>
+        }
+        @case(SubscriptionPlan.Enterprise){
+            <p> Welcome to the Enterprise plan !!! You have access to unlimited features. </p>
+        }
+        @default {
+            <p> Not a valid subscription </p>
+        }
+    }
+    
+</div>

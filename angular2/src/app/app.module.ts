@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { FormsModule } from '@angular/forms';
 import { AuthenticateComponent } from './authenticate/authenticate.component';
+import { SubscriptionComponent } from './subscription/subscription.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DirectivesComponent,
-    AuthenticateComponent
+    AuthenticateComponent,
+    SubscriptionComponent
   ],
   imports: [
     BrowserModule,
