@@ -9,6 +9,8 @@ import { AuthenticateComponent } from './authenticate/authenticate.component';
 import { SubscriptionComponent } from './subscription/subscription.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { TitlePipe } from './title.pipe';
+import { ErrorComponent } from './error/error.component';
+import { DynamicComponent } from './dynamic/dynamic.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { TitlePipe } from './title.pipe';
     AuthenticateComponent,
     SubscriptionComponent,
     PipesComponent,
-    TitlePipe
+    TitlePipe,
+    ErrorComponent,
+    DynamicComponent
   ],
   imports: [
     BrowserModule,

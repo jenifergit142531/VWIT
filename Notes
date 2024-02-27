@@ -50,3 +50,7 @@ Built in pipes :
 - currency
 - date
 - percent 
+
+Routing :
+
+navigate across multiple components
