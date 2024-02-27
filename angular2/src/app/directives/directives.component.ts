@@ -25,4 +25,8 @@ export class DirectivesComponent {
     ]
   }
 
+  trackbyProdId(index:number,PropShop:any):string
+{
+  return PropShop.index;
+}
 }

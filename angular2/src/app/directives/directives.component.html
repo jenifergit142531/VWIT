@@ -16,7 +16,7 @@
             </tr>
         </thead>
         <tbody>
-       <!--     <tr *ngFor='let prop of PropShop; let i =index; let first=first; let last=last; let even=even;let odd=odd;'>
+         <tr *ngFor='let prop of PropShop; trackBy:trackbyProdId ; let i =index; let first=first; let last=last; let even=even;let odd=odd;'>
                 <td>{{prop.pid}}</td>
                 <td>{{prop.pname}}</td>
                 <td>{{prop.price}}</td>
@@ -29,9 +29,8 @@
                 <td>{{odd}}</td>
 
             </tr>
--->
            
-                @for(prop of PropShop; track prop.Id){
+           <!--   @for(prop of PropShop; track prop.Id){
                   <tr><td>{{prop.pid}}</td> 
                   <td>{{prop.pname}}</td>
                    <td>{{prop.price}}</td>
@@ -42,7 +41,7 @@
                     </tr>
                      
                 }
-           
+           -->  
         </tbody>
     </table>
 </div>
