@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class PropertylistComponent implements OnInit {
 
-  properties:any[]=[];
+  properties?:any[];
 
   private propertyService!:PropertyService;
 

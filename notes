@@ -17,3 +17,16 @@ Two ways,
 - Inject on Provider
 - Constructor injection
 
+?  vs ! 
+
+? - guard against null or undefined values
+- safe navigation operator
+- guard declaration
+- if the value is available use it or do nothing
+
+! - not null or undefined 
+- not-null assertisn operator
+- trust declaration
+- i promise that i will initialize the values at later point in the code 
+
+
