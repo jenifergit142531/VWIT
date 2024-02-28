@@ -1,4 +1,5 @@
 export class Property {
+
     id:number=0;
     pname:string='';
     ptype:string='';
@@ -12,5 +13,6 @@ export class Property {
         this.ptype=ptype;
         this.price=price;
     }
-
 }
+
+

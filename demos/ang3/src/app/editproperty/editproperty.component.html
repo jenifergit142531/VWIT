@@ -1,0 +1,19 @@
+<h1>Add New Property</h1>
+<br><br>
+<form (submit)=" updateProperty()">
+    <label>Property Id</label>
+    <input [(ngModel)]="editedProperty.id" name="id">
+    <br>
+    <label>Property Name</label>
+    <input name="pname" [(ngModel)]="editedProperty.pname">
+    <br>
+    <label>Type</label>
+    <input name="ptype" [(ngModel)]="editedProperty.ptype">
+    <br>
+    <label>Price</label>
+    <input name="price" [(ngModel)]="editedProperty.price">
+    <br>
+    <br>
+    <button type="submit">Update Property</button>
+</form>
+

@@ -1,5 +1,7 @@
 <h3>FERA LUXE SPACZ</h3>
 <p>Property Listings</p>
+
+<button class="btn btn-primary" [routerLink]="'/addprop'">Add Property</button>
 <table class="table table-striped">
     <thead>
         <tr>
@@ -7,6 +9,8 @@
             <th>Name</th>
             <th>Type</th>
             <th>Price</th>
+            <th>Edit Operation</th>
+            <th>Delete Operation</th>
         </tr>
     </thead>
     <tbody>
@@ -17,8 +21,19 @@
                 <td>{{prop.pname}}</td>
                 <td>{{prop.ptype}}</td>
                 <td>{{prop.price}}</td>
+                <td>
+                    <button label="edit" (click)="editProperty(prop.id)"></button>
+                    
+                </td>
+                <td>
+                    <button label="delete" (click)="deleteProperty(prop.id)"></button>
+                </td>
             </tr>
         }
     </tbody>
     
 </table>
+
+
+
+
