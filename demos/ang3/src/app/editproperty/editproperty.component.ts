@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PropertyService } from '../property.service';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-editproperty',
   templateUrl: './editproperty.component.html',
   styleUrl: './editproperty.component.css'
 })
-export class EditpropertyComponent {
+export class EditpropertyComponent implements OnInit {
 
 
   editedProperty:any={
@@ -17,7 +17,11 @@ export class EditpropertyComponent {
       price:0
   }
 
-  constructor(private propertyService:PropertyService,private router:Router){}
+  constructor(private propertyService:PropertyService,private router:Router,private route:ActivatedRoute){}
+  ngOnInit(): void {
+    const propertyId=Number(this.route.snapshot.paramMap.get('id'));
+    this.editedProperty=this.propertyService.getProprtyById(propertyId);
+  }
 
   updateProperty():void{
     this.propertyService.updateProperty(this.editedProperty);
