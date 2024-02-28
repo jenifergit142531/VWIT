@@ -1,0 +1,19 @@
+
+Agenda :
+
+- Export
+- Services
+- Dependency Injection
+- Create a mock project using angular
+
+Angular Services :
+
+- piece of code / logic that performs specific task
+- reusability of code across multiple components
+- services needs to be injected into the application using dependency injection
+
+Two ways,
+
+- Inject on Provider
+- Constructor injection
+

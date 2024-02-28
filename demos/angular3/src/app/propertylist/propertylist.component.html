@@ -1,0 +1,24 @@
+<h3>FERA LUXE SPACZ</h3>
+<p>Property Listings</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(prop of properties;track prop.Id)
+        {
+            <tr>
+                <td>{{prop.id}}</td>
+                <td>{{prop.pname}}</td>
+                <td>{{prop.ptype}}</td>
+                <td>{{prop.price}}</td>
+            </tr>
+        }
+    </tbody>
+    
+</table>
