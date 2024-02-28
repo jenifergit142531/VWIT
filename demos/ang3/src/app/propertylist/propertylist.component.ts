@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injector, OnInit } from '@angular/core';
 import { PropertyService } from '../property.service';
 import { Router } from '@angular/router';
 
@@ -11,14 +11,24 @@ export class PropertylistComponent implements OnInit {
 
   properties:any[]=[];
 
-  constructor(private propertyService:PropertyService,private router:Router){
+  private propertyService!:PropertyService;
 
-    this.properties=this.propertyService.getProperties();
 
+
+  constructor(private injector:Injector,private router:Router){}
+
+  private getDependency():PropertyService{
+    if(!this.propertyService)
+    {
+      this.propertyService=this.injector.get(PropertyService);
+    }
+    return this.propertyService;
   }
 
   ngOnInit(): void {
-    
+
+    const myserviceInstance=this.getDependency();
+    myserviceInstance.getProperties();
   }
 
   editProperty(id:number):void{
