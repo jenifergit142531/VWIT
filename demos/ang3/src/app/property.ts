@@ -6,13 +6,13 @@ export class Property {
     price:number=0
 
 
-    constructor(id:number,pname:string,ptype:string,price:number)
+   /* constructor(id:number,pname:string,ptype:string,price:number)
     {
         this.id=id;
         this.pname=pname;
         this.ptype=ptype;
         this.price=price;
-    }
+    }*/
 }
 
 

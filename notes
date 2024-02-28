@@ -29,4 +29,10 @@ Two ways,
 - trust declaration
 - i promise that i will initialize the values at later point in the code 
 
+Testing :
+
+- verify that your angular application behaves as expected in various conditions.
+
+
+
 

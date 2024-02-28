@@ -20,7 +20,7 @@ export class PropertylistComponent implements OnInit {
   
   ngOnInit(): void {
 
-    const myserviceInstance=this.injector.get(PropertyService);
+   const myserviceInstance=this.injector.get(PropertyService);
    this.properties= myserviceInstance.getProperties();
   }
 
