@@ -1,0 +1,39 @@
+1.create a Grocery app to perform CRUD (Create, Read, Update, Delete) application:
+
+Create Component:
+
+Create an Angular component named ProductListComponent to display a list of products.
+Each product item should display its name, description, price, and any other relevant information.
+Include buttons to view, edit, and delete each product.
+
+Read Component:
+
+Create an Angular component named ProductDetailsComponent to display the details of a single product.
+Show all details of the selected product, including its name, description, price, and any other relevant information.
+
+Update Component:
+
+Create an Angular component named EditProductComponent to edit an existing product.
+Implement a form with fields to update the product's name, description, and price.
+Pre-fill the form with the current product details.
+
+Create Component:
+
+Create an Angular component named CreateProductComponent to add a new product.
+Implement a form with fields to enter the product's name, description, and price.
+Validate the form to ensure all fields are filled out correctly before submitting.
+
+Service Implementation:
+
+Implement an Angular service named ProductService to handle CRUD operations for products.
+Include methods to fetch a list of products, get details of a single product by ID, add a new product, update an existing product, and delete a product.
+
+Routing Configuration:
+
+Configure Angular routing to navigate between different components.
+Define routes for the product list, product details, edit product, and create product components.
+
+unit Testing:
+
+Write unit tests to verify that CRUD operations work as expected.
+Test scenarios such as adding a new product, updating an existing product, deleting a product, and viewing product details.
