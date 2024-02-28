@@ -17,18 +17,11 @@ export class PropertylistComponent implements OnInit {
 
   constructor(private injector:Injector,private router:Router){}
 
-  private getDependency():PropertyService{
-    if(!this.propertyService)
-    {
-      this.propertyService=this.injector.get(PropertyService);
-    }
-    return this.propertyService;
-  }
-
+  
   ngOnInit(): void {
 
-    const myserviceInstance=this.getDependency();
-    myserviceInstance.getProperties();
+    const myserviceInstance=this.injector.get(PropertyService);
+   this.properties= myserviceInstance.getProperties();
   }
 
   editProperty(id:number):void{
