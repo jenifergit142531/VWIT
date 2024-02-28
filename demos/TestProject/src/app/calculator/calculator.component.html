@@ -1,0 +1,19 @@
+<p>Calculator Test Project</p>
+
+<div>
+<input type="number" [(ngModel)]="a">
+<select [(ngModel)]="operator">
+<option value="add">+</option>
+<option value="subtract">-</option>
+<option value="multiply">*</option>
+<option value="divide">/</option>
+</select>
+
+<input type="number" [(ngModel)]="b">
+
+<button (click)="calculate()">Calculate</button>
+
+<br>
+
+<p>Result:{{result}}</p>
+</div>

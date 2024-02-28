@@ -18,6 +18,7 @@ describe('PropertyService', () => {
   {
     const property={id:4,pname:'ddd',ptype:'coliving',price:12000};
     service.addProperty(property);
+    debugger; //execution will pause here 
     expect(service.getProperties()).toContain(property);
   })
 
