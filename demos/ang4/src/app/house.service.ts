@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { House } from './house';
-import { Observable } from 'rxjs';
+import { Observable, firstValueFrom } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -12,9 +12,23 @@ export class HouseService {
 
   constructor(private http:HttpClient) { }
 
-  getAllHouses():Observable<House[]>
+  /*getAllHouses():Observable<House[]>
   {
     return this.http.get<House[]>(this.baseApiUrl);
+  }*/
+
+  async getAllHouses():Promise<House[]>
+  {
+    try{
+      //const projects=await this.http.get<House[]>(this.baseApiUrl)
+
+      const pj=await firstValueFrom(this.http.get<House[]>(this.baseApiUrl));
+      return pj;
+    }
+    catch(error){
+      console.log("Error fetching the data",error);
+      throw error;
+    }
   }
 
   addHousing(addhouse:House):Observable<House[]>

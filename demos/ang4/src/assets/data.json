@@ -1,0 +1,17 @@
+[
+    {
+      "id":1,
+      "name":"iphone",
+      "price":12300
+    },
+    {
+        "id":2,
+        "name":"Macbook",
+        "price":123000
+    },
+    {
+        "id":3,
+        "name":"hpmouse",
+        "price":2300
+    }
+]

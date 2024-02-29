@@ -12,9 +12,28 @@ export class HouselistComponent implements OnInit {
   house:House[]=[];
 
   constructor(private houseService:HouseService){}
-  ngOnInit(): void {
-    this.houseService.getAllHouses()
-    .subscribe({
+  ngOnInit(){
+
+    const hou=this.houseService.getAllHouses();
+    try
+    { 
+      hou.then((value)=>
+      {
+        this.house=value;
+       
+       const result=[value];
+       console.log(result);
+      })
+       
+      
+       
+    }
+    catch(error)
+    {
+      console.log(error);
+    }
+   
+   /* .subscribe({
       next:(house)=>
       {
         this.house=house;
@@ -26,7 +45,7 @@ export class HouselistComponent implements OnInit {
     {
       console.log(response);
     }
-    })
+    })*/
   }
 
 

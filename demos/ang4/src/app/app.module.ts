@@ -7,12 +7,14 @@ import { HouselistComponent } from './houselist/houselist.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HousecreateComponent } from './housecreate/housecreate.component';
 import { FormsModule } from '@angular/forms';
+import { JsonfilereaderComponent } from './jsonfilereader/jsonfilereader.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HouselistComponent,
-    HousecreateComponent
+    HousecreateComponent,
+    JsonfilereaderComponent
   ],
   imports: [
     BrowserModule,
