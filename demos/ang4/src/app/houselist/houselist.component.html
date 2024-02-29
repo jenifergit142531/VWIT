@@ -23,7 +23,9 @@
                 <td>{{h.price}}</td>
                 <td>{{h.age}}</td>
                 <td><img [src]="h.imageUrl" [width]="50" [height]="50" alt="house image"></td>
+                <td><button type="submit" [routerLink]="['/hedit',h.houseId]">Edit</button></td>
                 
+            
             </tr>
         }
     </tbody>

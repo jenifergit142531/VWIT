@@ -8,13 +8,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { HousecreateComponent } from './housecreate/housecreate.component';
 import { FormsModule } from '@angular/forms';
 import { JsonfilereaderComponent } from './jsonfilereader/jsonfilereader.component';
+import { HouseeditComponent } from './houseedit/houseedit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HouselistComponent,
     HousecreateComponent,
-    JsonfilereaderComponent
+    JsonfilereaderComponent,
+    HouseeditComponent
   ],
   imports: [
     BrowserModule,

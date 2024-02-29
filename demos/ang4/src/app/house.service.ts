@@ -8,7 +8,7 @@ import { Observable, firstValueFrom } from 'rxjs';
 })
 export class HouseService {
 
-  baseApiUrl:string="https://localhost:7186/api/Houses";
+  baseApiUrl:string="https://localhost:7186/api/Houses/";
 
   constructor(private http:HttpClient) { }
 
@@ -36,5 +36,20 @@ export class HouseService {
     addhouse.houseId='00000000-0000-0000-0000-000000000000';
     return this.http.post<House[]>(this.baseApiUrl,addhouse);
 
+  }
+
+  getHouseById(id:string):Observable<House>
+  {
+    return this.http.get<House>(this.baseApiUrl+id);
+  }
+
+  updateHouse(id:string,updatehouse:House):Observable<House[]>
+  {
+   return this.http.put<House[]>(this.baseApiUrl+id,updatehouse);
+  }
+
+  deleteHouse(id:string):Observable<House>
+  {
+    return this.http.delete<House>(this.baseApiUrl+id);
   }
 }
