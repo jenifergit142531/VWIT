@@ -1,0 +1,15 @@
+
+
+Agenda :
+
+- Http Client
+- Observables
+- Create a FSD using angular
+- Auth Guard
+
+Http Client :
+
+- HTTP Request and interact with the web aerver or api.
+- Handle the request and response in angular application
+- Import 'HttpClientmodule' package
+- HttpClient class should be injected in your components/services.

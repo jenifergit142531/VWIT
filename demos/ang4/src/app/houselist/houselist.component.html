@@ -1,0 +1,24 @@
+<h3>Housing Project</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Age</th>
+            <th>Image</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(h of house;track h.houseid)
+        {
+            <tr>
+                <td>{{h.houseid}}</td>
+                <td>{{h.name}}</td>
+                <td>{{h.price}}</td>
+                <td>{{h.age}}</td>
+                <td><img [src]="h.imageurl" alt="house image"></td>
+            </tr>
+        }
+    </tbody>
+</table>
