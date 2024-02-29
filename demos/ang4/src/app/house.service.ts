@@ -16,4 +16,11 @@ export class HouseService {
   {
     return this.http.get<House[]>(this.baseApiUrl);
   }
+
+  addHousing(addhouse:House):Observable<House[]>
+  {
+    addhouse.houseId='00000000-0000-0000-0000-000000000000';
+    return this.http.post<House[]>(this.baseApiUrl,addhouse);
+
+  }
 }

@@ -1,8 +1,8 @@
 export class House {
-    houseid!:string;
+    houseId!:string;
     name!:string;
     price!:number;
     age!:number;
-    imageurl!:string;
+    imageUrl!:string;
 
 }

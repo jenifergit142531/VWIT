@@ -1,4 +1,9 @@
 <h3>Housing Project</h3>
+<br>
+<br>
+<button type="submit" [routerLink]="'/hcreate'">Create Housing</button>
+<br>
+<br>
 <table>
     <thead>
         <tr>
@@ -10,14 +15,15 @@
         </tr>
     </thead>
     <tbody>
-        @for(h of house;track h.houseid)
+        @for(h of house;track h.houseId)
         {
             <tr>
-                <td>{{h.houseid}}</td>
+                <td>{{h.houseId}}</td>
                 <td>{{h.name}}</td>
                 <td>{{h.price}}</td>
                 <td>{{h.age}}</td>
-                <td><img [src]="h.imageurl" alt="house image"></td>
+                <td><img [src]="h.imageUrl" [width]="50" [height]="50" alt="house image"></td>
+                
             </tr>
         }
     </tbody>

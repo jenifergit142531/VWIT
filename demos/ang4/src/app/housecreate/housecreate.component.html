@@ -1,0 +1,21 @@
+<h3>Create Housing Project</h3>
+<br>
+<br>
+<form #form="ngForm" (ngSubmit)="createHouse()">
+
+
+<label>House Name</label>
+<input type="text" name="name" id="name" [(ngModel)]="addHouse.name">
+<br><br>
+<label>Price</label>
+<input type="number" name="price" id="price" [(ngModel)]="addHouse.price">
+<br><br>
+<label>Age</label>
+<input type="number" name="age" id="age" [(ngModel)]="addHouse.age">
+<br><br>
+<label>Image Url</label>
+<input type="text" name="imageUrl" id="imageUrl" [(ngModel)]="addHouse.imageUrl">
+<br><br>
+
+<button type="submit">Create</button>
+</form>

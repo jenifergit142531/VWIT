@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HouselistComponent } from './houselist/houselist.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HousecreateComponent } from './housecreate/housecreate.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HouselistComponent
+    HouselistComponent,
+    HousecreateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
