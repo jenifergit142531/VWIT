@@ -4,6 +4,7 @@ import { HouselistComponent } from './houselist/houselist.component';
 import { HousecreateComponent } from './housecreate/housecreate.component';
 import { JsonfilereaderComponent } from './jsonfilereader/jsonfilereader.component';
 import { HouseeditComponent } from './houseedit/houseedit.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
@@ -18,7 +19,10 @@ const routes: Routes = [
 
   {
     path:'jfileread',component:JsonfilereaderComponent
-  }
+  },
+  {
+    path:'login',component:LoginComponent
+  },
 
 ];
 

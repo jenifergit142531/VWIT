@@ -9,6 +9,7 @@ import { HousecreateComponent } from './housecreate/housecreate.component';
 import { FormsModule } from '@angular/forms';
 import { JsonfilereaderComponent } from './jsonfilereader/jsonfilereader.component';
 import { HouseeditComponent } from './houseedit/houseedit.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HouseeditComponent } from './houseedit/houseedit.component';
     HouselistComponent,
     HousecreateComponent,
     JsonfilereaderComponent,
-    HouseeditComponent
+    HouseeditComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
