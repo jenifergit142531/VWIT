@@ -1,0 +1,21 @@
+
+
+Agenda :
+
+- Template driven forms
+- Reactive forms
+- Forms validation
+
+
+Template driven forms :
+
+- HTML Template forms
+- Forms Module ----> [(ngModel)] achieve two way data binding
+- declarative style
+- all the form structure , validations are directly visible on the html template 
+
+Reactive forms :
+
+- uses ts class file for form structure and validation
+
+- these are asynchronous and more dynamic in handling the form controls 
