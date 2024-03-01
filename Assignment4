@@ -1,0 +1,6 @@
+- Create an angular app that performs CRUD 
+
+-> Create components,services,model
+-> perform form validations
+-> Implement Dependency injection
+-> Include unit testing
