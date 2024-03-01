@@ -26,8 +26,8 @@
             >
 
             <div *ngIf="f.submitted && email.errors">
-                <div *ngIf="email.errors['required']">** email is required</div>
-                <div *ngIf="email.errors['email']">** email id must be in right format</div>
+                <div *ngIf="email.errors['required']">** Username is required</div>
+                <div *ngIf="email.errors['email']">** Email id must be in right format</div>
                 
                 </div>
 </div>
@@ -50,7 +50,7 @@ maxlength="15"
     </div> 
         
 </div>
-<button type="submit" (click)="onSubmit()" [disabled]="!f.valid">Register</button>
+<button type="submit" (click)="onSubmit()">Register</button>
 <button type="button" (click)="onReset(f)">Reset</button>
 
 

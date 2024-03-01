@@ -7,12 +7,18 @@ import { TemplatedrivenComponent } from './templatedriven/templatedriven.compone
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { FormsModule} from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     TemplatedrivenComponent,
-    ReactiveformComponent
+    ReactiveformComponent,
+    LoginComponent,
+    DashboardComponent,
+   
   ],
   imports: [
     BrowserModule,
